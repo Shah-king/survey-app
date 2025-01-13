@@ -137,6 +137,7 @@
   },
   mounted() {
       // load school list for select drop down box
+      const SERVER_URL = 'http://44.212.9.12'
       fetch(process.env.SERVER_URL + '/api/school-list')
       .then(response => response.json())
       .then(schoolList => {
